@@ -14,7 +14,7 @@ describe('Javabuzz', function() {
       expect(javabuzz.isDivisibleByFive(5)).toBe(true);
     });
     it('divisible by 3 and 5', function() {
-      expect(javabuzz.isDivisibleByThreeAndFive(15)).toBe(true);
+      expect(javabuzz.isDivisibleByFifteen(15)).toBe(true);
     });
   });
 
@@ -26,7 +26,13 @@ describe('Javabuzz', function() {
       expect(javabuzz.isDivisibleByFive(3)).toBe(false);
     });
     it('divisible by 3 and 5', function() {
-      expect(javabuzz.isDivisibleByThreeAndFive(37)).toBe(false);
+      expect(javabuzz.isDivisibleByFifteen(37)).toBe(false);
+    });
+  });
+
+  describe('when playing, says', function() {
+    it('Java, when a number is divisible by 3', function() {
+      expect(javabuzz.says(3)).toEqual('Java');
     });
   });
 
