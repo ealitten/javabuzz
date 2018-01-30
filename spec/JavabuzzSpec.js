@@ -1,5 +1,7 @@
 describe('Javabuzz', function() {
 
+  var Javabuzz = require('../src/Javabuzz.js')
+
   var javabuzz;
 
   beforeEach(function() {
